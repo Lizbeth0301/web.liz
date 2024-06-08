@@ -1,0 +1,70 @@
+/* Estilo para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000080;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+}
+
+/* Estilo para el corazón */
+.heart {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+    top: -50px;
+    left: 0;
+}
+
+.heart::after {
+    left: 50px;
+    top: 0;
+}
+
+/* Estilo para el mensaje */
+.message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    opacity: 1;
+}
+
+/* Estilo para la imagen */
+.hidden-image {
+    display: none;
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Estilo para los mensajes ocultos */
+.hidden-message {
+    display: none;
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 20px;
+}
